@@ -1,0 +1,16 @@
+title: course-wechat-miniprogram
+description: 这是描述
+template:
+  repo: course-wechat-miniprogram-template
+  name: course-wechat-miniprogram
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
